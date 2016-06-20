@@ -1,0 +1,48 @@
+
+<div id="{$_name}" style="{$style}" class="{$class} row">{rows}{row}
+  <div data-xsnb-item-id="{$id}" onclick="javascript:void(0);" class="xepan-commerce-item">
+    <div style="visibility: visible; animation-delay: 0.5s; animation-name: slideInUp;" data-wow-delay=".5s" class="new-collections-grid1 new-collections-grid1-image-width animated wow slideInUp animated animated">{image_wrapper}
+      <div class="new-collections-grid1-image xepan-commerce-image-wrapper"><a href="{$item_detail_page_url_via_image}" class="product-image xepan-commerce-image-anchor"><img src="{first_image}abc{/}" class="img-responsive xepan-commerce-item-img"/></a>
+        <div class="new-collections-grid1-image-pos new-collections-grid1-image-pos1"><a href="{item_detail_page_url_via_name}{/}">Quick View</a></div>
+        <div class="new-collections-grid1-right new-collections-grid1-right-rate">
+          <div class="rating">
+            <div class="rating-left"><img src="images/2.png" alt=" " class="img-responsive"/></div>
+            <div class="rating-left"><img src="images/2.png" alt=" " class="img-responsive"/></div>
+            <div class="rating-left"><img src="images/2.png" alt=" " class="img-responsive"/></div>
+            <div class="rating-left"><img src="images/2.png" alt=" " class="img-responsive"/></div>
+            <div class="rating-left"><img src="images/1.png" alt=" " class="img-responsive"/></div>
+            <div class="clearfix"> </div>
+          </div>
+        </div>
+        <div class="new-one">
+          <p>New</p>
+        </div>
+      </div>{/image_wrapper}
+      {name_wrapper}
+      <h4><a href="{item_detail_page_url_via_name}{/}">{$name}</a></h4>{/}
+      {description_wrapper}
+      <p>{$description}</p>{/}
+      <div class="new-collections-grid1-left simpleCart_shelfItem">
+        <p>{original_price_wrapper}<i>{$original_price}</i>{/}
+          {sale_price_wrapper}<span class="item_price">{$sale_price}</span>{/}
+          {shipping_charge_wrapper}<span class="item_price">{shipping_charge}0{/}</span>{/}
+          {addtocart_wrapper}
+          <div data-xsnbitemid="{$id}" data-name="{$name}" class="xepan-commerce-item-addtocart">{$Addtocart}</div>{/}
+          {personalizedbtn_wrapper}<a data-xsnbitemid="{$id}" class="item_add commerce-personalize-button-wrapper">{$personalizedbtn}</a>{/}
+        </p>
+      </div>{specification_wrapper}
+      <div class="new-collections-grid1-left simpleCart_shelfItem">
+        {specification}
+        {rows}{row}
+        <p><small><i>{$name}</i><span class="item_price"> {$value}</span></small></p>{/}{/}
+        {/specification}
+      </div>{/}
+    </div>
+  </div>{/}{/}
+  {not_found}
+  <div role="alert" class="full-width alert alert-warning"><strong class="glyphicon glyphicon-warning-sign">&nbsp;Warning!<span>&nbsp;{$not_found_message}</span></strong></div>{/}
+  {paginator_wrapper}
+  <div class="new-collections-grid1-left simpleCart_shelfItem">
+    <div style="float:none; clear:both" class="xepan-commerce-item-paginator">{$Paginator}</div>
+  </div>{/}
+</div>

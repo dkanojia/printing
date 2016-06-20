@@ -1,0 +1,18 @@
+
+<li id="{$_name}" class="dropdown">Products <a href="#" data-toggle="dropdown" class="dropdown-toggle">{category_list}<b class="caret"></b></a>
+  <ul class="dropdown-menu multi-column columns-3">
+    <div class="row">{rows}{row}
+      <div class="col-sm-4">
+        <ul data-id="{$id}" class="multi-column-dropdown">
+          <h6> <a href="{$url}">{$name}</a><small>{item_count_wrapper}{$item_count} - items {/}</small>{image_wrapper}<img src="{$category_image_url}"/>{/}
+            {price_wrapper}
+            {$min_price} - {$max_price}
+            {/}
+          </h6>
+          <li><a href="#">{$nested_category}</a></li>
+        </ul>
+        <div class="clearfix"></div>
+      </div>{/}{/}
+    </div>{/}
+  </ul>
+</li>

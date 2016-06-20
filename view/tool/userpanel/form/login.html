@@ -1,0 +1,28 @@
+
+<div id="{$_name}" class="container">
+  <h3 data-wow-delay=".5s" class="animated wow zoomIn">Login Form</h3>
+  <p data-wow-delay=".5s" class="est animated wow zoomIn">
+    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+    deserunt mollit anim id est laborum.
+  </p>
+  <div data-wow-delay=".5s" class="login-form-grids animated wow slideInUp">
+    <form>
+      <div class="atk-form-row atk-form-field">{$username}{$fieldError}</div>
+      <div class="atk-form-row atk-form-field">{$password}</div>
+      <input type="submit" value="Login"/>
+    </form>
+  </div>{footer_wrapper}
+  <h4 data-wow-delay=".5s" class="animated wow slideInUp">For New People</h4>
+  <p data-wow-delay=".5s" class="animated wow slideInUp">{register_wrapper}<a style="cursor:pointer; cursor: hand;" data-showview="new_registration" class="reg_view xepan-login-panl-loadview">Register Here</a>(Or) forgot password <span aria-hidden="true" class="glyphicon glyphicon-menu-right"></span>{/}
+    {login_wrapper}<a id="login-forget-link" style="cursor:pointer; cursor: hand;" data-showview="forget_password" class="forgotpassword xepan-login-panl-loadview">Forgot Password</a>activate account<span aria-hidden="true" class="glyphicon glyphicon-menu-right"></span>{/}
+    {activate_wrapper}<a style="cursor:pointer; cursor: hand;" data-showview="verify_account" class="reg_view xepan-login-panl-loadview">Activate
+      <div id="login-box-footer"></div></a>{/} 
+  </p>{/}
+  <div class="text-center text-primary">{$message}        
+    <style>
+       input{
+        width:100%;
+      }
+    </style>
+  </div>
+</div>

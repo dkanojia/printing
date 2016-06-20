@@ -1,0 +1,71 @@
+div(id='{$_name}' class="{$class}")
+  {$Content}
+  {xepan_commerce_itemdetail_wrapper}
+  .col-md-7.single-right-left.simpleCart_shelfItem.animated.wow.slideInRight(data-wow-delay='.5s')
+    {name_wrapper}
+    h3 {$name}
+    {/}
+    h4
+      {sale_price_wrapper}
+      span.item_price {$sale_price}
+      {/}
+      {original_price_wrapper}
+      |  - {$original_price}
+      {/}
+      {shipping_charge_wrapper}
+      |  - {$shipping_charge}
+      {/}
+    {description_wrapper}
+    .description
+      h5
+        i Description
+      p
+        | {$item_description}
+    {/}
+    .occasion-cart
+      {personalizedbtn_wrapper}
+      a(data-xsnbitemid="{$id}" class="commerce-personalize-button-wrapper") {$personalizedbtn}
+      {/}
+      {addtocart_wrapper} 
+      .xshop-item-custom-field-name.xshop-item-addtocart(data-xsnbitemid="{$id}" data-name="{$name}"){$Addtocart}
+      {/} 
+    .social
+      .social-left
+        p Share On :
+      .social-right
+        ul.social-icons
+          li
+            a.facebook(href='#')
+          li
+            a.twitter(href='#')
+          li
+            a.g(href='#')
+          li
+            a.instagram(href='#')
+      .clearfix  
+  .clearfix  
+  .bootstrap-tab.animated.wow.slideInUp(data-wow-delay='.5s')
+    .bs-example.bs-example-tabs(role='tabpanel', data-example-id='togglable-tabs')
+      ul#myTab.nav.nav-tabs(role='tablist')
+        {description_wrapper}
+        li.active(role='presentation')
+          a#home-tab(href='#home', role='tab', data-toggle='tab', aria-controls='home', aria-expanded='true') Description
+        {/}
+        {specification_wrapper}
+        li(role='presentation')
+          a#specification-tab(href='#specification', role='tab', data-toggle='tab', aria-controls='specification') Specification
+        {/}
+        {item_upload_wrapper}
+        li(role='presentation')
+          a#upload-tab(href='#upload', role='tab', data-toggle='tab', aria-controls='upload') Upload Your Design
+      #myTabContent.tab-content
+        #home.tab-pane.fade.in.active.bootstrap-tab-text(role='tabpanel', aria-labelledby='home-tab')
+          h5 Product Brief Description
+          p
+            | {$item_description}
+        #specification.tab-pane.fade.bootstrap-tab-text(role='tabpanel', aria-labelledby='specification-tab')
+          {$specification}
+        #upload.tab-pane.fade.bootstrap-tab-text(role='tabpanel', aria-labelledby='upload-tab')
+          {$item_upload}
+  {/}
+        

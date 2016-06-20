@@ -1,0 +1,27 @@
+.col-md-5.single-right-left.animated.wow.slideInUp(data-wow-delay='.5s')
+  .flexslider.xepan-commerce-item-images(id='{$_name}' class="{$class} " style="{$style}")
+    {$Content}
+    {zoom3_image}
+    img.zoomwrapper-img(id='zoom_03{$_name}' src='{firstimage}{/}', data-zoom-image='{$firstimage}' class="xepan-commerce-item-image-to-zoom" style="margin-left: -7px;")
+    {/zoom3_image}
+    ul.slides.xshop-item-image-list(id='gal1{$_name}'  style="margin-top:30px;")
+      {rows}
+      {row}
+      li(data-thumb='images/si.jpg')
+        .thumb-image
+          a.xshop-item-image-link.elevatezoom-gallery(style="float: left; width: 30%;" href='\#{$id}' data-image='{$file}' data-zoom-image='{$file}')
+            img.img-responsive(id='img_{$id}' src='{$thumb_url}' alt='{$img_alt}' title='{$img_title}')
+      {/row}
+      {/rows}
+  // flixslider
+  script(defer='', src='js/jquery.flexslider.js')
+  link(rel='stylesheet', href='css/flexslider.css', type='text/css', media='screen')
+  script.
+    // Can also be used with $(document).ready()
+    $(window).load(function() {
+    $('.flexslider').flexslider({
+    animation: "slide",
+    controlNav: "thumbnails"
+    });
+    });
+  // flixslider

@@ -1,0 +1,19 @@
+
+<div id="{$_name}" class="{$class}">
+  <table class="timetable_sub">{header}
+    <thead>{cols}{col}
+      <th class="th">Specification</th>
+      <th class="th">Value</th>{/}{/}
+    </thead>{/}
+    <tbody>{rows}{row}
+      <tr data-id="{$id}" class="{$odd_even}">{cols}
+        <td style="white-space:nowrap" class="invert">{$name}</td>
+        <td class="invert">{$value}</td>{/}
+      </tr>{/}{/}
+      {not_found}
+      <div class="row">
+        <div role="alert" class="col-md-12 text-center alert alert-warning"><span class="icon-attention fa fa-exclamation-triangle"> &nbsp;{$not_found_message}</span></div>
+      </div>{/}
+    </tbody>
+  </table>
+</div>

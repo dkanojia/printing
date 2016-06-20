@@ -1,0 +1,25 @@
+
+<div id="{$_name}" class="container">
+  <h3 data-wow-delay=".5s" class="animated wow zoomIn">Activate your Account</h3>
+  <p data-wow-delay=".5s" class="est animated wow zoomIn">Enter activation code</p>
+  <div data-wow-delay=".5s" class="login-form-grids animated wow slideInUp">
+    <form>
+      <div class="atk-form-row atk-form-field">
+        <div class="xepan-form-field">{$email}</div>
+      </div>
+      <div class="atk-form-row atk-form-field">
+        <div class="xepan-form-field">{$activation_code}</div>
+      </div>
+      <input type="submit" value="Verify"/>
+    </form>
+  </div>
+  <p data-wow-delay=".5s" class="animated wow slideInUp">{login_wrapper}<a style="cursor:pointer; cursor: hand;" data-showview="login_view" class="forgot-link back-login xepan-login-panl-loadview">Back to login</a>  (Or)  
+    {/} 
+    {resend_wrapper}<a style="cursor:pointer; cursor: hand;" data-showview="verify_again" class="forgot-link back-login xepan-login-panl-loadview">Resend verification</a>{/}
+  </p>
+  <style>
+     input{
+      width:100%;
+    }
+  </style>
+</div>

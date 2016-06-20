@@ -1,0 +1,23 @@
+li.dropdown(id='{$_name}') Products 
+	a.dropdown-toggle(href='#', data-toggle='dropdown')
+		{category_list}
+		b.caret
+	ul.dropdown-menu.multi-column.columns-3
+		.row
+			{rows}{row}
+			.col-sm-4
+				ul.multi-column-dropdown(data-id='{$id}')
+					h6 
+						a(href="{$url}") {$name}
+						small {item_count_wrapper}{$item_count} - items {/}
+						{image_wrapper}
+						img(src="{$category_image_url}")
+						{/}
+						{price_wrapper}
+						{$min_price} - {$max_price}
+						{/}
+					li
+						a(href='#') {$nested_category}
+				.clearfix
+			{/}{/}
+		{/}

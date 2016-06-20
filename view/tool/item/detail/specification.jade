@@ -1,0 +1,22 @@
+div(id="{$_name}" class="{$class}")
+    table.timetable_sub
+        {header}
+        thead
+            {cols}{col}
+            th.th Specification
+            th.th Value
+            {/}{/}
+        {/}
+        tbody
+            {rows}{row}
+            tr(class="{$odd_even}" data-id="{$id}")
+                {cols}
+                td.invert(style='white-space:nowrap') {$name}
+                td.invert {$value}
+                {/}
+            {/}{/}
+            {not_found}
+            div.row
+                .col-md-12.text-center.alert.alert-warning(role="alert")
+                    span.icon-attention.fa.fa-exclamation-triangle  &nbsp;{$not_found_message}
+            {/}

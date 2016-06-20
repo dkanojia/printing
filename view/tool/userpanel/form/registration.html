@@ -1,0 +1,42 @@
+
+<div id="{$_name}" class="container">
+  <h3 data-wow-delay=".5s" class="animated wow zoomIn">Register Here</h3>
+  <p data-wow-delay=".5s" class="est animated wow zoomIn">Fill Your Information To Register</p>
+  <div class="login-form-grids">
+    <h5 data-wow-delay=".5s" class="animated wow slideInUp">profile information</h5>
+    <form data-wow-delay=".5s" class="animated wow slideInUp">
+      <div class="xepan-form-field">{$first_name}</div>
+      <div class="xepan-form-field">{$last_name}</div>
+    </form>
+    <h6 data-wow-delay=".5s" class="animated wow slideInUp">Login information</h6>
+    <form data-wow-delay=".5s" class="animated wow slideInUp">
+      <div class="atk-form-row atk-form-field">
+        <div class="xepan-form-field">{$email_id}</div>
+      </div>
+      <div class="atk-form-row atk-form-field">
+        <div class="xepan-form-field">{$password}</div>
+      </div>
+      <div class="atk-form-row atk-form-field">
+        <div class="xepan-form-field">{$retype_password}</div>
+      </div>
+      <div class="register-check-box">
+        <div class="check">
+          <label class="checkbox">
+            <input type="checkbox" name="checkbox"/><i> </i>I accept the terms and conditions
+          </label>
+        </div>
+      </div>
+      <input type="submit" value="Register"/>
+    </form>
+  </div>{login_wrapper}
+  <div data-wow-delay=".5s" class="register-home animated wow slideInUp"><a style="cursor:pointer; cursor: hand;" data-showview="login_view" class="back-login xepan-login-panl-loadview">Back To Login</a>
+    <div id="login-box-footer"></div>
+  </div>{/}
+  <div class="text-center text-primary">{$message}        
+    <style>
+       input{
+        width:100%;
+      }
+    </style>
+  </div>
+</div>

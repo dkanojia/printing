@@ -1,0 +1,36 @@
+.container(id="{$_name}")
+  h3.animated.wow.zoomIn(data-wow-delay='.5s') Login Form
+  p.est.animated.wow.zoomIn(data-wow-delay='.5s')
+    | Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+    | deserunt mollit anim id est laborum.
+  .login-form-grids.animated.wow.slideInUp(data-wow-delay='.5s')
+    form
+      .atk-form-row.atk-form-field
+        | {$username}{$fieldError}
+      .atk-form-row.atk-form-field
+        | {$password}
+      input(type='submit', value='Login')
+  {footer_wrapper}
+  h4.animated.wow.slideInUp(data-wow-delay='.5s') For New People
+  p.animated.wow.slideInUp(data-wow-delay='.5s')
+    {register_wrapper}
+    a.reg_view.xepan-login-panl-loadview(style='cursor:pointer; cursor: hand;' data-showview='new_registration') Register Here
+    | (Or) forgot password 
+    span.glyphicon.glyphicon-menu-right(aria-hidden='true')
+    {/}
+    {login_wrapper}
+    a#login-forget-link.forgotpassword.xepan-login-panl-loadview(style='cursor:pointer; cursor: hand;' data-showview='forget_password') Forgot Password
+    | activate account
+    span.glyphicon.glyphicon-menu-right(aria-hidden='true')
+    {/}
+    {activate_wrapper}
+    a.reg_view.xepan-login-panl-loadview(style='cursor:pointer; cursor: hand;' data-showview='verify_account')
+      | Activate
+      #login-box-footer
+    {/} 
+  {/}
+  div.text-center.text-primary {$message}        
+    style.
+        #{$_name} input{
+          width:100%;
+        }

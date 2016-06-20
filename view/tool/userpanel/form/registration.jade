@@ -1,0 +1,34 @@
+.container(id="{$_name}")
+  h3.animated.wow.zoomIn(data-wow-delay='.5s') Register Here
+  p.est.animated.wow.zoomIn(data-wow-delay='.5s')
+    | Fill Your Information To Register
+  .login-form-grids
+    h5.animated.wow.slideInUp(data-wow-delay='.5s') profile information
+    form.animated.wow.slideInUp(data-wow-delay='.5s')
+      .xepan-form-field{$first_name}
+      .xepan-form-field{$last_name}
+    h6.animated.wow.slideInUp(data-wow-delay='.5s') Login information
+    form.animated.wow.slideInUp(data-wow-delay='.5s')
+      .atk-form-row.atk-form-field
+        .xepan-form-field{$email_id}
+      .atk-form-row.atk-form-field
+        .xepan-form-field{$password}
+      .atk-form-row.atk-form-field
+        .xepan-form-field{$retype_password}
+      .register-check-box
+        .check
+          label.checkbox
+            input(type='checkbox', name='checkbox')
+            i  
+            | I accept the terms and conditions
+      input(type='submit', value='Register')
+  {login_wrapper}
+  .register-home.animated.wow.slideInUp(data-wow-delay='.5s')
+    a.back-login.xepan-login-panl-loadview(style="cursor:pointer; cursor: hand;" data-showview="login_view") Back To Login
+    #login-box-footer
+  {/}
+  div.text-center.text-primary {$message}        
+    style.
+        #{$_name} input{
+          width:100%;
+        }
