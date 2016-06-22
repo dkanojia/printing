@@ -4038,3 +4038,9 @@ td.invert-image a img {
 .xepan-cart-empty{
 	margin-left: 30%;
 }
+
+
+.tool-search{
+	overflow: visible;
+	right: 35%;
+}
