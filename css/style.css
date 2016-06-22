@@ -3884,6 +3884,9 @@ td.invert-image a img {
 	width: calc();
 	text-align: center;
 }
+.tab-per .commerce-personalize-button-wrapper .btn-block{
+	width: auto;
+}
 .commerce-personalize-button-wrapper .btn-primary{
 	background-color: transparent;
 	display: block;
