@@ -16,9 +16,8 @@
       <h5><i>Description</i></h5>
       <p>{$item_description}</p>
     </div>{/}
-    <div class="occasion-cart">{personalizedbtn_wrapper}<a data-xsnbitemid="{$id}" class="commerce-personalize-button-wrapper">{$personalizedbtn}</a>{/}
-      {addtocart_wrapper} 
-      <div data-xsnbitemid="{$id}" data-name="{$name}" class="xshop-item-custom-field-name xshop-item-addtocart">{$Addtocart}</div>{/} 
+    <div class="occasion-cart">{personalizedbtn_wrapper}
+      <div data-xsnbitemid="{$id}" class="commerce-personalize-button-wrapper">{$personalizedbtn}</div>{/}
     </div>
     <div class="social">
       <div class="social-left">
@@ -40,15 +39,20 @@
     <div role="tabpanel" data-example-id="togglable-tabs" class="bs-example bs-example-tabs">
       <ul id="myTab" role="tablist" class="nav nav-tabs">{description_wrapper}
         <li role="presentation" class="active"><a id="home-tab" href="#home" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">Description</a></li>{/}
+        {addtocart_wrapper}
+        <li role="presentation"><a id="addtocart-tab" href="#addtocart" role="tab" data-toggle="tab" aria-controls="addtocart">AddToCart</a></li>{/}
         {specification_wrapper}
         <li role="presentation"><a id="specification-tab" href="#specification" role="tab" data-toggle="tab" aria-controls="specification">Specification</a></li>{/}
         {item_upload_wrapper}
-        <li role="presentation"><a id="upload-tab" href="#upload" role="tab" data-toggle="tab" aria-controls="upload">Upload Your Design</a></li>
+        <li role="presentation"><a id="upload-tab" href="#upload" role="tab" data-toggle="tab" aria-controls="upload">Upload Your Design</a></li>{/}
       </ul>
       <div id="myTabContent" class="tab-content">
         <div id="home" role="tabpanel" aria-labelledby="home-tab" class="tab-pane fade in active bootstrap-tab-text">
           <h5>Product Brief Description</h5>
           <p>{$item_description}</p>
+        </div>
+        <div id="addtocart" role="tabpanel" aria-labelledby="addtocart-tab" class="tab-pane fade bootstrap-tab-text">
+          <div data-xsnbitemid="{$id}" data-name="{$name}" class="xshop-item-custom-field-name xshop-item-addtocart">{$Addtocart}</div>
         </div>
         <div id="specification" role="tabpanel" aria-labelledby="specification-tab" class="tab-pane fade bootstrap-tab-text">{$specification}</div>
         <div id="upload" role="tabpanel" aria-labelledby="upload-tab" class="tab-pane fade bootstrap-tab-text">{$item_upload}</div>

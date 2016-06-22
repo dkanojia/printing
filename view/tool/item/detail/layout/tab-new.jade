@@ -24,11 +24,8 @@ div(id='{$_name}' class="{$class}")
     {/}
     .occasion-cart
       {personalizedbtn_wrapper}
-      a(data-xsnbitemid="{$id}" class="commerce-personalize-button-wrapper") {$personalizedbtn}
+      div(data-xsnbitemid="{$id}" class="commerce-personalize-button-wrapper") {$personalizedbtn}
       {/}
-      {addtocart_wrapper} 
-      .xshop-item-custom-field-name.xshop-item-addtocart(data-xsnbitemid="{$id}" data-name="{$name}"){$Addtocart}
-      {/} 
     .social
       .social-left
         p Share On :
@@ -51,6 +48,10 @@ div(id='{$_name}' class="{$class}")
         li.active(role='presentation')
           a#home-tab(href='#home', role='tab', data-toggle='tab', aria-controls='home', aria-expanded='true') Description
         {/}
+        {addtocart_wrapper}
+        li(role='presentation')
+          a#addtocart-tab(href='#addtocart', role='tab', data-toggle='tab', aria-controls='addtocart') AddToCart
+        {/}
         {specification_wrapper}
         li(role='presentation')
           a#specification-tab(href='#specification', role='tab', data-toggle='tab', aria-controls='specification') Specification
@@ -58,11 +59,14 @@ div(id='{$_name}' class="{$class}")
         {item_upload_wrapper}
         li(role='presentation')
           a#upload-tab(href='#upload', role='tab', data-toggle='tab', aria-controls='upload') Upload Your Design
+        {/}
       #myTabContent.tab-content
         #home.tab-pane.fade.in.active.bootstrap-tab-text(role='tabpanel', aria-labelledby='home-tab')
           h5 Product Brief Description
           p
             | {$item_description}
+        #addtocart.tab-pane.fade.bootstrap-tab-text(role='tabpanel', aria-labelledby='addtocart-tab')
+          .xshop-item-custom-field-name.xshop-item-addtocart(data-xsnbitemid="{$id}" data-name="{$name}"){$Addtocart}
         #specification.tab-pane.fade.bootstrap-tab-text(role='tabpanel', aria-labelledby='specification-tab')
           {$specification}
         #upload.tab-pane.fade.bootstrap-tab-text(role='tabpanel', aria-labelledby='upload-tab')

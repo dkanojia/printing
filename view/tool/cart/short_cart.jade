@@ -1,7 +1,7 @@
 .xepan-commerce-tool-cart(id='{$_name}' class='{$class}')
   {$Content}
   {cart_container}
-  ul
+  ul(style='list-style: outside none;')
     li.dropdown.reset-margin.text-center(style="padding:0px;margin:0px;")
       a.dropdown-toggle.reset-margin(href='#', data-toggle='dropdown', role='button', aria-expanded='false' style="padding:0px;margin:0px;")
         span.xepan-commerce-cart-item-count  {total_count}0{/}

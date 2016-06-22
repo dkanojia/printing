@@ -1,0 +1,38 @@
+
+<div id="{$_name}" style="{$style}" class="{$class} row">{rows}{row}
+  <div class="col-md-4 products-right-grids-bottom-grid">
+    <div data-xsnb-item-id="{$id}" onclick="javascript:void(0);" class="xepan-commerce-item">
+      <div data-wow-delay=".5s" class="new-collections-grid1 products-right-grid1 animated wow slideInUp">{image_wrapper}
+        <div class="new-collections-grid1-image xepan-commerce-image-wrapper"><a href="{$item_detail_page_url_via_image}" class="product-image xepan-commerce-image-anchor"><img src="{first_image}abc{/}" class="img-responsive xepan-commerce-item-img"/></a>
+          <div class="new-collections-grid1-image-pos products-right-grids-pos"><a href="{item_detail_page_url_via_name}{/}">Quick View</a></div>
+        </div>{/image_wrapper}
+        {name_wrapper}
+        <h4><a href="{item_detail_page_url_via_name}{/}">{$name}</a></h4>{/}
+        {description_wrapper}
+        <p>{$description}</p>{/}
+        <div class="simpleCart_shelfItem products-right-grid1-add-cart">
+          <p>{original_price_wrapper}<i>{$original_price}</i>{/}
+            {sale_price_wrapper}<span class="item_price">{$sale_price}</span>{/}
+            {shipping_charge_wrapper}<span class="item_price">{shipping_charge}0{/}</span>{/}
+            {addtocart_wrapper}
+            <div data-xsnbitemid="{$id}" data-name="{$name}" class="xepan-commerce-item-addtocart">{$Addtocart}</div>{/}
+            {personalizedbtn_wrapper}
+            <div data-xsnbitemid="{$id}" class="commerce-personalize-button-wrapper">{$personalizedbtn}</div>{/}
+          </p>
+        </div>{specification_wrapper}
+        <div class="simpleCart_shelfItem products-right-grid1-add-cart">
+          {specification}
+          {rows}{row}
+          <p></p><small></small><i>{$name}</i><span class="item_price"> {$value}</span>{/}{/}
+          {/specification}
+        </div>{/}
+      </div>
+    </div>
+  </div>{/}{/}
+  {not_found}
+  <div role="alert" class="full-width alert alert-warning"></div><strong class="glyphicon glyphicon-warning-sign">&nbsp;Warning!</strong><span>&nbsp;{$not_found_message}</span>{/}
+  {paginator_wrapper}
+  <nav data-wow-delay=".5s" class="numbering animated wow slideInRight">
+    <div style="float:none; clear:both" class="paginator-css xepan-commerce-item-paginator">{$Paginator}</div>
+  </nav>{/}
+</div>

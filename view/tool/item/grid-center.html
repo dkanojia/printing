@@ -28,7 +28,8 @@
           {shipping_charge_wrapper}<span class="item_price">{shipping_charge}0{/}</span>{/}
           {addtocart_wrapper}
           <div data-xsnbitemid="{$id}" data-name="{$name}" class="xepan-commerce-item-addtocart">{$Addtocart}</div>{/}
-          {personalizedbtn_wrapper}<a data-xsnbitemid="{$id}" class="item_add commerce-personalize-button-wrapper">{$personalizedbtn}</a>{/}
+          {personalizedbtn_wrapper}
+          <div data-xsnbitemid="{$id}" class="commerce-personalize-button-wrapper">{$personalizedbtn}</div>{/}
         </p>
       </div>{specification_wrapper}
       <div class="new-collections-grid1-left simpleCart_shelfItem">
@@ -43,6 +44,6 @@
   <div role="alert" class="full-width alert alert-warning"><strong class="glyphicon glyphicon-warning-sign">&nbsp;Warning!<span>&nbsp;{$not_found_message}</span></strong></div>{/}
   {paginator_wrapper}
   <div class="new-collections-grid1-left simpleCart_shelfItem">
-    <div style="float:none; clear:both" class="xepan-commerce-item-paginator">{$Paginator}</div>
+    <div style="float:none; clear:both" class="hide-paginator xepan-commerce-item-paginator">{$Paginator}</div>
   </div>{/}
 </div>

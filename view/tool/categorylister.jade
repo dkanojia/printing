@@ -1,23 +1,30 @@
-li.dropdown(id='{$_name}') Products 
-	a.dropdown-toggle(href='#', data-toggle='dropdown')
-		{category_list}
-		b.caret
-	ul.dropdown-menu.multi-column.columns-3
-		.row
-			{rows}{row}
-			.col-sm-4
-				ul.multi-column-dropdown(data-id='{$id}')
-					h6 
-						a(href="{$url}") {$name}
-						small {item_count_wrapper}{$item_count} - items {/}
+div(id='{$_name}')
+	{category_list}
+	#bs-example-navbar-collapse-1.collapse.navbar-collapse.menu-shylock
+		{rows}{row}
+		ul.nav.navbar-nav.menu__list
+			li.dropdown.menu__item(data-id='{$id}')
+				a.dropdown-toggle.menu__link(href="{$url}", data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
+					| {$name}
+					{item_count_wrapper}{$item_count} - items {/} 
+					span.caret
+				ul.dropdown-menu.multi-column.columns-3
+					.row
 						{image_wrapper}
-						img(src="{$category_image_url}")
+						.col-sm-6.multi-gd-img1.multi-gd-text
+							a(href='mens.html')
+								img(src="{$category_image_url}", alt=' ')
 						{/}
 						{price_wrapper}
-						{$min_price} - {$max_price}
+						.col-sm-3.multi-gd-img
+							ul.multi-column-dropdown
+								li
+									a(href='mens.html') {$min_price} - {$max_price}
 						{/}
-					li
-						a(href='#') {$nested_category}
-				.clearfix
-			{/}{/}
-		{/}
+						.col-sm-3.multi-gd-img
+							ul.multi-column-dropdown
+								li
+									{$nested_category}
+						.clearfix
+		{/}{/}
+	{/}
