@@ -706,6 +706,19 @@ button.btn-block.btn.btn-primary
     padding: .5em 1em;
     border: 1px solid;
 }
+
+.xepan-addtocartbutton-multi-step-wizard select{
+	font-size: 10px;
+    color: #D8703F;
+    margin: 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: .5em 1em;
+    border: 1px solid;
+}
+.xepan-addtocartbutton-multi-step-wizard span{
+	font-size: 10px;
+}
 .new-collections-grid1-left p i{
 	color: #999;
 	position:relative;
@@ -718,7 +731,8 @@ button.btn-block.btn.btn-primary
 .new-collections-grid1-left p i:before,.products-right-grid1-add-cart p i:before
 .xepan-commerce-item-addtocart button.atk-button:before,
 .xepan-commerce-item-personalize button.atk-button:before,
-  button.btn-block.btn.btn-primary:before{
+  button.btn-block.btn.btn-primary:before,
+  .xepan-addtocartbutton-multi-step-wizard select:before{
 	background: #999 none repeat scroll 0 0;
     content: "";
     height: 1px;
@@ -745,7 +759,8 @@ button.btn-block.btn.btn-primary
 .new-collections-grid1-left p a:hover,.occasion-cart a:hover,.products-right-grid1-add-cart p a:hover,.new-products-grid-right-add-cart p a:hover, 
 .xepan-commerce-item-addtocart button.atk-button:hover, 
 .xepan-commerce-item-personalize button.atk-button:hover,
-button.btn-block.btn.btn-primary.atk-button:hover{
+button.btn-block.btn.btn-primary.atk-button:hover,
+.xepan-addtocartbutton-multi-step-wizard select:hover{
 	color: #222;
     border: 1px solid;
 }
@@ -3886,6 +3901,9 @@ td.invert-image a img {
 }
 .tab-per .commerce-personalize-button-wrapper .btn-block{
 	width: auto;
+}
+.tab-per .commerce-personalize-button-wrapper{
+	margin-top: 7px;
 }
 .commerce-personalize-button-wrapper .btn-primary{
 	background-color: transparent;
