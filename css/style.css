@@ -707,7 +707,8 @@ button.btn-block.btn.btn-primary
     border: 1px solid;
 }
 
-.xepan-addtocartbutton-multi-step-wizard select{
+.xepan-addtocartbutton-multi-step-wizard select,
+.xepan-addtocartbutton-multi-step-wizard input{
 	font-size: 10px;
     color: #D8703F;
     margin: 0;
@@ -732,7 +733,8 @@ button.btn-block.btn.btn-primary
 .xepan-commerce-item-addtocart button.atk-button:before,
 .xepan-commerce-item-personalize button.atk-button:before,
   button.btn-block.btn.btn-primary:before,
-  .xepan-addtocartbutton-multi-step-wizard select:before{
+  .xepan-addtocartbutton-multi-step-wizard select:before,
+  .xepan-addtocartbutton-multi-step-wizard input:before{
 	background: #999 none repeat scroll 0 0;
     content: "";
     height: 1px;
@@ -760,7 +762,8 @@ button.btn-block.btn.btn-primary
 .xepan-commerce-item-addtocart button.atk-button:hover, 
 .xepan-commerce-item-personalize button.atk-button:hover,
 button.btn-block.btn.btn-primary.atk-button:hover,
-.xepan-addtocartbutton-multi-step-wizard select:hover{
+.xepan-addtocartbutton-multi-step-wizard select:hover,
+.xepan-addtocartbutton-multi-step-wizard input:hover{
 	color: #222;
     border: 1px solid;
 }
