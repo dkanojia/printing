@@ -4047,3 +4047,21 @@ td.invert-image a img {
 	overflow: visible;
 	right: 35%;
 }
+
+.page_front_designer_save_virtualpage .container{
+	text-align: center;
+	width: auto;
+	margin-top: 265px;
+}
+.page_front_designer_save_virtualpage .container h3{
+	margin-top: -255px;
+}
+.page_front_designer_save_virtualpage .container p{
+	font-size: 11px;
+}
+
+.page_front_designer_save_virtualpage .container .login-form-grids{
+	margin: 0;
+	width: auto;
+	max-height: auto;
+}
