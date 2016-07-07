@@ -961,6 +961,7 @@ button.btn-block.btn.btn-primary.atk-button:hover,
 }
 .newsletter button.btn-block{
 	display: inline;
+    position: relative;
 }
 .newsletter input[type="submit"]:hover,
 .newsletter button.atk-button:hover{
