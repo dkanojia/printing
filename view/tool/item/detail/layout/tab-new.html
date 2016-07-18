@@ -4,13 +4,11 @@
   {xepan_commerce_itemdetail_wrapper}
   <div data-wow-delay=".5s" class="col-md-7 single-right-left simpleCart_shelfItem animated wow slideInRight">{name_wrapper}
     <h3>{$name}</h3>{/}
-    <h4>{sale_price_wrapper}<span class="item_price">{$sale_price}</span>{/}
+    <h4>{sale_price_wrapper}<span class="item_price xepan-commerce-tool-item-sale-price">{$sale_price}</span>{/}
       {original_price_wrapper}
-       - {$original_price}
-      {/}
+      <div class="xepan-commerce-tool-item-original-price"> - {$original_price}</div>{/}
       {shipping_charge_wrapper}
-       - {$shipping_charge}
-      {/}
+      <div class="xepan-commerce-tool-item-shipping-charge"> - {$shipping_charge}</div>{/}
     </h4>
     <div class="occasion-cart">{addtocart_wrapper}
       <div data-xsnbitemid="{$id}" data-name="{$name}" class="xshop-item-custom-field-name xshop-item-addtocart">{$Addtocart}</div>{/}

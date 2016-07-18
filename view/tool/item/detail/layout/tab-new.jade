@@ -7,13 +7,15 @@ div(id='{$_name}' class="{$class}")
     {/}
     h4
       {sale_price_wrapper}
-      span.item_price {$sale_price}
+      span.item_price.xepan-commerce-tool-item-sale-price {$sale_price}
       {/}
       {original_price_wrapper}
-      |  - {$original_price}
+      .xepan-commerce-tool-item-original-price
+        |  - {$original_price}
       {/}
       {shipping_charge_wrapper}
-      |  - {$shipping_charge}
+      .xepan-commerce-tool-item-shipping-charge
+        |  - {$shipping_charge}
       {/}
     //- {description_wrapper}
     //- .description
