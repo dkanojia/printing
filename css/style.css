@@ -4097,3 +4097,6 @@ td.invert-image a img {
 .xepan-designer-price-addtocart-section.crt .xepan-commerce-tool-item-original-price{
 	display: none;
 }
+.xepan-customize-design-preview .row{
+	margin-bottom: 70px;
+}
