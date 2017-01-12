@@ -15,12 +15,13 @@
         .xepan-form-field{$password}
       .atk-form-row.atk-form-field
         .xepan-form-field{$retype_password}
+      {tnc_wrapper}
       .register-check-box
         .check
           label.checkbox
-            input(type='checkbox', name='checkbox')
+            {$tnc}
             i  
-            | I accept the terms and conditions
+            a(href = "{$tnc_page_url}" target='_blank') I accept Terms and conditions of usage
       input(type='submit', value='Register')
   {login_wrapper}
   .register-home.animated.wow.slideInUp(data-wow-delay='.5s')

@@ -18,12 +18,10 @@
       </div>
       <div class="atk-form-row atk-form-field">
         <div class="xepan-form-field">{$retype_password}</div>
-      </div>
+      </div>{tnc_wrapper}
       <div class="register-check-box">
         <div class="check">
-          <label class="checkbox">
-            <input type="checkbox" name="checkbox"/><i> </i>I accept the terms and conditions
-          </label>
+          <label class="checkbox">{$tnc}<i> </i><a href="{$tnc_page_url}" target="_blank">I accept Terms and conditions of usage</a></label>
         </div>
       </div>
       <input type="submit" value="Register"/>
