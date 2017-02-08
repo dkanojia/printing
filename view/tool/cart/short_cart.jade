@@ -30,7 +30,10 @@
                   {$id}: {$name}
               {/}{/}
             .col-lg-3
-              {$sales_amount} ({qty_wrapper}{qty_form}{qty}0{/}{/}{/})
+              {$sales_amount} 
+              .row
+                .col-lg-6.col-md-6.col-sm-6 Qty  
+                .col-lg-6.col-md-6.col-sm-6  {qty_wrapper}{qty_form}{qty}0{/}{/}{/}
             .col-lg-1
               button.btn.btn-xs.btn-info.pull-right.xepan-commerce-cart-item-delete(data-cartid='{$id}') x
           {/}{/}
