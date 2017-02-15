@@ -4103,8 +4103,23 @@ td.invert-image a img {
 
 .height .new-collections-grid1,
 .right-height .new-collections-grid1{
-  height: 508px;
+  /*height: 508px;*/
 }
 .right-down-height .new-collections-grid1{
   /*height: 330px;*/
+}
+
+.image-right-height .new-collections-grid1 img{
+	height: 404px !important;
+	margin: 0 !important; 
+}
+
+.image-left-height .new-collections-grid1 img{
+	height: 404px !important;
+	margin: 0 !important; 
+}
+
+.right-down-height .new-collections-grid1,
+.down-left-grid .new-collections-grid1{
+	margin-top: 4.5%; 
 }
